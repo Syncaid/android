@@ -6,12 +6,40 @@
     android:background="@color/white"
     tools:context=".view.settingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings Fragment"
-        android:textSize="26dp" />
+        android:text="Settings"
+        android:textSize="18sp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/picturepic" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fatma"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="170dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fatma.abouelhija@esprit.tn"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"/>
 
 
 </FrameLayout>

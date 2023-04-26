@@ -67,7 +67,7 @@ class signup2 : AppCompatActivity() {
 
                 }
 
-                startActivity(Intent(this,verificationpage::class.java))
+
             }
 
         }
