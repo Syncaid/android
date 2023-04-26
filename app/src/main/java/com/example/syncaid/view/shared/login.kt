@@ -34,7 +34,7 @@ class login : AppCompatActivity() {
 
 
         forgotpass.setOnClickListener{
-            startActivity(Intent(this, recoverpassword::class.java))
+            startActivity(Intent(this, recoverPassword::class.java))
         }
         signup.setOnClickListener {
             if (email.text.toString().isEmpty() ||

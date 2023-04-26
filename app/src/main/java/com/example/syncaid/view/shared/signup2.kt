@@ -77,7 +77,7 @@ class signup2 : AppCompatActivity() {
                             UserViewModel.register2(id,jsonObject) { response, code ->
                                 if(code == 200) {
                                     Log.d("SUCCESS", "Response: $response")
-                                    val intent = Intent(this, alldone::class.java)
+                                    val intent = Intent(this, allDone::class.java)
                                     intent.putExtra("ID","$id")
                                     startActivity(intent)
                                 }
