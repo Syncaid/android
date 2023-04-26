@@ -35,7 +35,7 @@ class patientDeviceFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_device, container, false)
+        return inflater.inflate(R.layout.fragment_patient_device, container, false)
     }
 
     companion object {

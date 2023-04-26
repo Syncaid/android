@@ -86,4 +86,24 @@ class userViewModel() : ViewModel(){
             }
         })
     }
+
+    fun recoverPassword1(jsonObject: JsonObject, callback: (String?, Int) -> Unit) {
+        apiService.sendPasswordEmail(jsonObject).enqueue(object : Callback<JsonElement> {
+            override fun onResponse(call: Call<JsonElement>, response: Response<JsonElement>) {
+                if (response.isSuccessful) {
+                    val responseBody = response.body()
+                    if (responseBody != null) {
+                        callback(responseBody.toString(),response.code())
+                    }
+                } else {
+                    val errorBody = response.errorBody()?.string()
+                    callback(errorBody,response.code())
+                }
+            }
+
+            override fun onFailure(call: Call<JsonElement>, t: Throwable) {
+                callback(t.message,501)
+            }
+        })
+    }
 }

@@ -22,6 +22,9 @@ interface apiService {
     @POST("/user/login")
     fun login( @Body requestBody: JsonObject): Call<JsonElement>
 
+    @POST("/user/passwordemail")
+    fun sendPasswordEmail( @Body requestBody: JsonObject): Call<JsonElement>
+
 
 
 
