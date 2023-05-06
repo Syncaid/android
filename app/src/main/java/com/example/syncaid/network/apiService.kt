@@ -25,7 +25,21 @@ interface apiService {
     @POST("/user/passwordemail")
     fun sendPasswordEmail( @Body requestBody: JsonObject): Call<JsonElement>
 
+    @POST("/user/resetpassword")
+    fun resetPassword( @Body requestBody: JsonObject): Call<JsonElement>
 
+    @POST("/user/verificationemail")
+    fun sendVerificationEmail( @Body requestBody: JsonObject): Call<JsonElement>
+
+    @POST("/user/logout/{userId}")
+    fun logout(@Path("userId") userId: String): Call<JsonElement>
+
+
+    @GET("/faint/byUserId/{id}")
+    fun getFaints(@Path("id") id: String): Call<JsonElement>
+
+    @DELETE("/faint/{id}")
+    fun deleteFaint(@Path("id") id: String): Call<JsonElement>
 
 
 }
