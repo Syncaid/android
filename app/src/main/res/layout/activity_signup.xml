@@ -16,7 +16,11 @@
         android:fontFamily="@font/montserrat"
         android:text="Create your account"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textColor="@color/black"
+=======
+        android:textColor="@color/normal_text"
+>>>>>>> origin/dev
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +37,11 @@
         android:text="Please enter your information"
         android:textAlignment="center"
         android:textColor="@color/normal_text"
+<<<<<<< HEAD
         android:textSize="16dp"
+=======
+        android:textSize="15sp"
+>>>>>>> origin/dev
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -62,7 +70,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="56dp"
+=======
+        android:layout_marginTop="70dp"
+>>>>>>> origin/dev
         android:fontFamily="@font/montserrat"
         android:text="Firstname"
         android:textAlignment="viewStart"
@@ -182,7 +194,11 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="32dp"
+=======
+        android:layout_marginTop="70dp"
+>>>>>>> origin/dev
         android:layout_marginRight="40dp"
         android:backgroundTint="@color/main_color"
         android:text="Sign up"

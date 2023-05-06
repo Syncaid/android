@@ -16,7 +16,11 @@
         android:fontFamily="@font/montserrat"
         android:text="Tell us about yourself"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textColor="@color/black"
+=======
+        android:textColor="@color/normal_text"
+>>>>>>> origin/dev
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

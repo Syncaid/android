@@ -3,17 +3,25 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven { url 'https://jitpack.io' }
     }
 }
 
 
+=======
+    }
+}
+>>>>>>> origin/dev
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven { url 'https://jitpack.io' }
+=======
+>>>>>>> origin/dev
     }
 }
 rootProject.name = "syncaid"

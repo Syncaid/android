@@ -28,7 +28,11 @@
         android:fontFamily="@font/montserrat"
         android:text="All done!"
         android:textAlignment="center"
+<<<<<<< HEAD
         android:textColor="@color/black"
+=======
+        android:textColor="@color/normal_text"
+>>>>>>> origin/dev
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

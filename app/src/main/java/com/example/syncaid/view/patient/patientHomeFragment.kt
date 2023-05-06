@@ -1,16 +1,22 @@
 package com.example.syncaid.view.patient
 
+<<<<<<< HEAD
 import android.graphics.Color
+=======
+>>>>>>> origin/dev
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.syncaid.R
+<<<<<<< HEAD
 import com.example.syncaid.databinding.FragmentPatientHomeBinding
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.data.*
+=======
+>>>>>>> origin/dev
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,10 +32,13 @@ class patientHomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+<<<<<<< HEAD
     private lateinit var sleepCycle: BarChart
     private lateinit var heartRate: LineChart
     private lateinit var oxygenRate: LineChart
 
+=======
+>>>>>>> origin/dev
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,13 +46,19 @@ class patientHomeFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+<<<<<<< HEAD
 
 
     }
+=======
+    }
+
+>>>>>>> origin/dev
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+<<<<<<< HEAD
         val view = inflater.inflate(R.layout.fragment_patient_home, container, false)
         sleepCycle = view.findViewById(R.id.sleepcycle)
         heartRate = view.findViewById(R.id.heartrate)
@@ -153,6 +168,10 @@ class patientHomeFragment : Fragment() {
 
 
         return view
+=======
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_patient_home, container, false)
+>>>>>>> origin/dev
     }
 
     companion object {

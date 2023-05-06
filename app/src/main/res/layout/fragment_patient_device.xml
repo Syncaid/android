@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     android:background="@color/white"
     tools:context=".view.patient.patientDeviceFragment">
 
@@ -16,12 +17,41 @@
         android:textSize="26dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="top|center_horizontal"/>
+=======
+    tools:context=".view.patient.patientDeviceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingVertical="0dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Devices"
+            android:textColor="@color/main_color"
+
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+>>>>>>> origin/dev
 
     <ImageView
         android:id="@+id/check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="116dp"
+=======
+        android:layout_marginTop="140dp"
+>>>>>>> origin/dev
         android:src="@drawable/device"
         android:layout_gravity="center|top"/>
 
@@ -30,7 +60,11 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+<<<<<<< HEAD
         android:layout_marginTop="90dp"
+=======
+        android:layout_marginTop="120dp"
+>>>>>>> origin/dev
         android:text="You can check if your watch is connected to Syncaid and currently operating by clicking on the button below"
         android:textAlignment="center"
         android:textColor="@color/normal_text"
@@ -43,12 +77,23 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginLeft="40dp"
+<<<<<<< HEAD
         android:layout_marginTop="550dp"
         android:layout_marginRight="40dp"
         android:backgroundTint="@color/main_color"
         android:text="Check Connectivity"
         app:cornerRadius="30dp"
         android:textColor="@color/white"
+=======
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/main_color"
+        android:text="Check Connectivity"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        app:cornerRadius="30dp"
+>>>>>>> origin/dev
         android:textSize="16dp" />
 
 

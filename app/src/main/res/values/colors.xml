@@ -10,5 +10,12 @@
     <color name="normal_text">#868686</color>
     <color name="main_color">#C19BFF</color>
     <color name="red_accent">#FF5252</color>
+<<<<<<< HEAD
     <color name="main2">#FDF4F5</color>
+=======
+    <color name="light_green">#8BC34A</color>
+    <color name="dark_mode_background">#121212</color>
+    <color name="splash_bg">#CCC9C9</color>
+    <color name="transparent">#00F44336</color>
+>>>>>>> origin/dev
 </resources>
