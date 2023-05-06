@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".view.patient.patientDeviceFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devices"
+        android:textColor="@color/main_color"
+        android:textSize="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="top|center_horizontal"/>
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/device"
+        android:layout_gravity="center|top"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="You can check if your watch is connected to Syncaid and currently operating by clicking on the button below"
+        android:textAlignment="center"
+        android:textColor="@color/normal_text"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/connectivitybtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/main_color"
+        android:text="Check Connectivity"
+        app:cornerRadius="30dp"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".view.patient.patientHomeFragment">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:text="Hello User!"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/card2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/main2"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/stroke_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="You had 2 strokes today"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="14dp"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="180dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/main2"
+                android:elevation="80dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleep Cycle"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/sleepcycle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="200dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="180dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="230dp"
+                android:backgroundTint="@color/main2"
+                app:cardCornerRadius="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart Rates"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/heartrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="40dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/main2"
+        app:cardCornerRadius="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxygen Rates"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/oxygenrate"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="128dp" />
+
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
