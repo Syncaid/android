@@ -1,0 +1,85 @@
+    <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        app:selectable="false"
+        app:key="Image"
+        android:layout="@layout/settings_top_half"
+        />
+
+    <PreferenceCategory
+        app:allowDividerAbove="false"
+        app:key="general"
+        app:title="General"
+        app:layout="@layout/preference_category"
+        >
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/darkmode"
+            app:key="darkmode"
+            app:summaryOff="Off"
+            app:summaryOn="On"
+            app:defaultValue="false"
+            app:title="Dark mode" />
+
+        <Preference
+            app:selectable="true"
+            app:icon="@drawable/edit"
+            app:key="edit"
+            app:title="Edit profile"
+            app:summary="Edit your informations"
+            />
+        <Preference
+            app:selectable="true"
+            app:icon="@drawable/password"
+            app:key="changepassword"
+            app:title="Change password"
+            app:summary="Change your password"
+
+            />
+
+        <Preference
+            app:icon="@drawable/baseline_people_24"
+            app:key="manageguardians"
+            app:title="Manage guardians"
+            app:summary="Manage the guardians linked to your account"
+            />
+
+
+        <Preference
+            app:icon="@drawable/baseline_qr_code_24"
+            app:key="qr"
+            app:title="QR code"
+            app:summary="Generate your QR"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Permissions"
+        app:layout="@layout/preference_category"
+        >
+
+        <SwitchPreferenceCompat
+            app:key="notification"
+            app:icon="@drawable/location"
+            app:summaryOff="Grant Syncaid Jr the notification permission to access all the available features"
+            app:summaryOn="Notification permission granted"
+            app:title="Notifications" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Account"
+        app:layout="@layout/preference_category"
+        >
+        <Preference
+
+            app:key="logout"
+            app:icon="@drawable/logout"
+            app:title="Logout" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
